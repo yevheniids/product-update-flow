@@ -1,0 +1,19 @@
+[[extensions]]
+name = "Product Updated"
+uid = "3011842f-c4a8-fd53-8971-8f3c0092a45eb7400121"
+type = "flow_trigger"
+handle = "product-updated"
+description = "Triggers when a product is updated in the store."
+
+[settings]
+  # Product reference — даёт Flow доступ ко всем данным продукта
+  # и включает связанные Shopify actions (Add product tags, etc.)
+  [[settings.fields]]
+  type = "product_reference"
+  description = "The product that was updated"
+
+  # Теги продукта на момент обновления
+  [[settings.fields]]
+  type = "single_line_text_field"
+  key = "Tags"
+  description = "The current tags of the product"

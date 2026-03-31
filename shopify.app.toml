@@ -1,0 +1,24 @@
+name = "dtp-product-tag-script-staging"
+client_id = "2fc2bfae565da73ab502fc211bd36d54"
+application_url = "https://amparo-undenounced-wei.ngrok-free.dev"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
+
+[access_scopes]
+scopes = "read_orders,read_products,write_products"
+
+[auth]
+redirect_urls = []
+
+[webhooks]
+api_version = "2024-10"
+
+[[webhooks.subscriptions]]
+topics = ["products/update"]
+uri = "/webhooks"
+
+[pos]
+embedded = false
