@@ -12,5 +12,4 @@ npm run dev             # start dev server
 shopify app deploy      # deploy Flow trigger extension
 ```
 
-When the project is started, connect it to the Shopify Flow
-Example: https://admin.shopify.com/store/yevhenii-test/apps/flow/overview/019cf6fc-148f-7819-bc10-bbe279457c60
+When the project is started, connect it to the Shopify Flow. Example: https://admin.shopify.com/store/yevhenii-test/apps/flow/overview/019cf6fc-148f-7819-bc10-bbe279457c60
